@@ -3,34 +3,44 @@ title: Home
 layout: home
 nav_order: 1
 ---
+# badusblab
+Badusb lab
+Exfiltrating some data from local files to pastebin using a Digispark - ATtiny85 USB
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+## Testing to see whether digispark works
+Blink.ino
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+Helloworld.ino
 
-More specifically, the created site:
+## Store credentials to send data to pastebin
+logindata.ps1
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+## Some duckyscript to testcase conversion to Arduino
+Use https://duckify.huhn.me
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+duckifyme.txt
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+## Get the pastebin api userkey with Powershell to be able to save private pastebins
 
-To get started with creating a site, simply:
+get-apiuserkey.ps1
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+## Setting up some exercises to "exfiltrate some important data"
+new-pastebin.ps1
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+new-pastebin2.ps1
 
-----
+new-pastebin3.ps1
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+## Showcasing  concatenating all commands to make it easier to convert to ducky script
+new-pastebin4.ps1
+### This one also makes you include your devkey and userkey
+new-pastebin5.ps1
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+## Executing some joke-script for demo purposes
+from-pastebin.ps1
+
+## Some dummy files so the scripts from the new-pastebinX.ps1 files have some data to return
+
+password.txt
+
+secret.txt
