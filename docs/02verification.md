@@ -37,8 +37,8 @@ void loop()
 	delay(1000);
 }
 ```
-Keep in mind that you have to replug your Attiny85 whenever you upload new code. You can do this as soon as you see the text appear.
-
+Keep in mind that you have to replug your Attiny85 whenever you upload new code. You can do this as soon as you see the text below appear.
+![Plug in the device information message](../images/pluginthedevice.png)
 
 ## Hello World
 This sketch will just start typing out "Hello world" wherever your cursor is, if it's in a location where it can type of course (notepad, search bar of your browser, ...)
