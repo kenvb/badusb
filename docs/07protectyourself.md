@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How to protect yourself?
-nav_order: 7
+nav_order: 8
 ---
 # How not to fall victim to these badUSB devices?
 
