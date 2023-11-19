@@ -17,6 +17,9 @@ On pastebin.com go to the API tab
 
 Find your developer API Key, Never share this with anyone!
 
+![Pastebin developer API Key](../images/developerapikey.png)
+
+
 Create a new file named logindata.ps1 file with the code below  and copy paste your dev key into that file.
 
 ```
