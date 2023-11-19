@@ -3,7 +3,7 @@ layout: default
 title: How to protect yourself?
 nav_order: 7
 ---
-# How to not fall victim to these badUSB devices?
+# How not to fall victim to these badUSB devices?
 
 - Don’t accept (weird) usb devices or insert them if you don’t know their origins.
 - Use an [USB Condom](https://www.zdnet.com/article/flying-this-weekend-this-6-usb-condom-will-protect-your-data-from-suspicious-outlets/)
