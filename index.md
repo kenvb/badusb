@@ -3,7 +3,8 @@ title: Home
 layout: home
 nav_order: 1
 ---
-# What is a badUSB?
+# BadUSB
+## What is a badUSB?
 
 - A USB device posing as a HID (Human Interface Device)
 - Pretends – mostly – to be a keyboard.
