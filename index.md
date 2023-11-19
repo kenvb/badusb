@@ -3,7 +3,15 @@ title: Home
 layout: home
 nav_order: 1
 ---
-# Bad USB lab
+# What is a badUSB?
+
+- A USB device posing as a HID (Human Interface Device)
+- Pretends – mostly – to be a keyboard.
+- Executes malicious code on unsuspecting users’ computer
+
+Old, but excellent [talk from Black Hat](https://www.youtube.com/watch?v=nuruzFqMgIw)
+
+# BadUSB lab
 Exfiltrating some data from local files to pastebin using a Digispark - ATtiny85 USB
 ## Required components
 -  Digispark Attiny85
