@@ -5,6 +5,7 @@ nav_order: 99
 ---
 # Some links
 ## badUSB as reported by media
+badUSB's being used out in the world.
 - https://www.vrt.be/vrtnws/en/2013/10/30/did_russia_spy_onwesternleaders-1-1766568/
 - https://threatpost.com/fin7-mailing-malicious-usb-sticks-ransomware/177541/
 - https://unit42.paloaltonetworks.com/plugx-variants-in-usbs/
