@@ -10,7 +10,9 @@ To verify everything is setup correctly and that our little Attiny85 Arduino is 
 
 This sketch makes the led on your Arduino blink.
 
-Copy paste the code below
+Copy paste the code below and upload it to your Attiny85. 
+![Code being copy pasted in the IDE](../images/uploadcode.png)
+
 ```
 // Original code: https://codebender.cc/sketch:8285#Digispark%20Blink.ino
 void setup()
@@ -35,6 +37,9 @@ void loop()
 	delay(1000);
 }
 ```
+Keep in mind that you have to replug your Attiny85 whenever you upload new code. You can do this as soon as you see the text appear.
+
+
 ## Hello World
 This sketch will just start typing out "Hello world" wherever your cursor is, if it's in a location where it can type of course (notepad, search bar of your browser, ...)
 
