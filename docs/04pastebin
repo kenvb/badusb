@@ -27,3 +27,27 @@ $DevKey     =   "PUT-DEVKEY-HERE"
 $UserKey    =   "PUT-USER-KEY-HERE"
 ```
 You don't have a UserKey yet.
+
+## First demo
+
+Go to the folder where you previously created logindata.ps1 and create a new file called `new-pastebin.ps1` with the code below. Open your terminal and run new-pastebin.ps1
+1. Observe the results. You will see an URL
+2. Visit this URL
+
+```
+#Demo 1, Something easy. Userkey won't be used yet so everything is anonymous
+. .\logindata.ps1
+$Content    =   Invoke-WebRequest -Uri "https://ipinfo.io/json"
+$Title      =   "pastebin1"
+
+$Body = @{ 
+    api_dev_key         = $DevKey;
+    #    api_user_key        = $UserKey;
+    api_paste_name	    = $Title;
+    api_paste_code      = $Content;
+    api_paste_private   = "0"; # 0=public 1=unlisted 2=private
+    api_option          = "paste";
+    }
+
+Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing -Body $Body -Method Post -OutFile $Title.txt
+```
