@@ -60,3 +60,27 @@ For this we need to setup our “userkey”​
 This means we will use 2 keys​: 
 1. Our dev key, which we already have​.
 2. Our user key, which still needs creation.
+
+### Userkey creation
+
+Create a new file called `get-apiuserkey.ps1`, using the code below.
+```
+$DevKey     = PUT-DEV-KEY-HERE
+$Username   = PUT-PASTEBIN-USERNAME-HERE
+$Password   = PUT-PASTEBIN-PASSWORD-HERE
+$PasteBinLogin = "https://pastebin.com/api/api_login.php"
+$Body = @{ 
+    api_dev_key = $DevKey;
+    api_user_name	= $Username;
+    api_user_password = $Password;
+    }
+
+Invoke-WebRequest -Uri $PasteBinLogin -UseBasicParsing -Body $Body -Method Post -OutFile Api_user_key.txt
+```
+- Fill in the 3 required variables at the top.
+- Run the script from the terminal.
+- Your userkey is saved in Api_user_key.txt
+- Add this key to logindata.ps1
+
+
+Once this is done… we’re cooking!
