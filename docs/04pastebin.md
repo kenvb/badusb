@@ -30,7 +30,8 @@ You don't have a UserKey yet.
 
 ## First demo
 
-Go to the folder where you previously created logindata.ps1 and create a new file called `new-pastebin.ps1` with the code below. Open your terminal and run new-pastebin.ps1
+Go to the folder where you previously created logindata.ps1 and create a new file called `new-pastebin.ps1` with the code below. Open your terminal and run new-pastebin.ps1 (don't doubleclick in windows, run it via the Powershell terminal)
+
 1. Observe the results. You will see an URL
 2. Visit this URL
 
