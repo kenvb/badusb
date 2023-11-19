@@ -44,9 +44,12 @@ Keep in mind that you have to replug your Attiny85 whenever you upload new code.
 This sketch will just start typing out "Hello world" wherever your cursor is, if it's in a location where it can type of course (notepad, search bar of your browser, ...)
 
 Copy paste the code below
+
+![Code being copy pasted in the IDE](../images/codehelloworld.png)
+
 ```
 //#define LAYOUT_FRENCH_BELGIAN
-#include “DigiKeyboard.h”
+#include <DigiKeyboard.h>
 void setup() {
   DigiKeyboard.delay(5000);
   // Will start printing wherever your keyboard cursor is located.
