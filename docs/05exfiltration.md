@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data Exfiltration with Pastebin
+title: Data Exfiltration using Pastebin
 nav_order: 6
 ---
 # First demo
