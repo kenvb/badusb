@@ -4,7 +4,7 @@ title: Final badUSB preparation
 nav_order: 7
 ---
 
-Our code from new-pastebin5.ps1 we will program using the ducky script, which in turn  generates the more difficult arduino code for us.
+We will program our code from new-pastebin5.ps1 using the ducky script, which in turn  generates the more difficult arduino code for us.
 1. Go to the online code generator.
 2. Convert powershell to ducky script
 3. Convert from duckyscript to arduino
