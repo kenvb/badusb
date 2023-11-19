@@ -12,4 +12,4 @@ Spacehuhn made [this wonderful online convertor](https://duckify.huhn.me) helpin
 
 Generate Arduino code using the online tool and upload this to your Arduino. Pay attention to the language settings on the bottom left corner.
 
-No doubt, Spacehuhn was inspired to use a similar name to [the project](https://github.com/hak5/usbrubberducky-payloads) that made "Bad USB's" infamous: the rubberducky
+No doubt, Spacehuhn was inspired to use a similar name to [the project](https://github.com/hak5/usbrubberducky-payloads) that made bad USB's infamous: the rubberducky
