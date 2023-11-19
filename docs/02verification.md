@@ -3,8 +3,12 @@ layout: default
 title: Verification
 nav_order: 3
 ---
+# Verification
+To verify everything is setup correctly and that our little Attiny85 Arduino is working, we'll create 2  little sketches and run their code.
 
-Blink code
+## Blink code
+
+This sketch makes the led on your Arduino blink.
 
 Copy paste the code below
 ```
@@ -31,7 +35,8 @@ void loop()
 	delay(1000);
 }
 ```
-Hello World
+## Hello World
+This sketch will just start typing out "Hello world" wherever your cursor is, if it's in a location where it can type of course (notepad, search bar of your browser, ...)
 
 Copy paste the code below
 ```
