@@ -12,9 +12,10 @@ Spacehuhn made [this wonderful online convertor](https://duckify.huhn.me) helpin
 
 Generate Arduino code using the online tool and upload this to your Arduino. Pay attention to the language settings on the bottom left corner.
 
-No doubt, Spacehuhn was inspired to use a similar name to [the project](https://github.com/hak5/usbrubberducky-payloads) that made bad USB's infamous: the rubberducky
+No doubt, Spacehuhn was inspired to use a similar name to [the project](https://github.com/hak5/usbrubberducky-payloads) that made badUSB's infamous: the rubberducky
 
 ## Let's duckify more code
+With this next piece of code, we'll get more into the possible functionality of our badUSB
 ```
 DELAY 500
 GUI R
@@ -27,3 +28,4 @@ STRING get-childitem -recurse
 DELAY 2000
 ENTER
 ```
+If everything goes well, code should be executed in a powershell terminal.
