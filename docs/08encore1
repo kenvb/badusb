@@ -1,3 +1,8 @@
+---
+layout: default
+title: Encore!
+nav_order: 9
+---
 Remember that mouse jiggler idea?
 Go to “file” -> “examples” -> “Digisparkmouse” -> “mouse”
 There’s a lot of boiler plate code, but you only really need 1 movement command and 1 delay
