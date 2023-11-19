@@ -3,7 +3,14 @@ layout: default
 title: Links
 nav_order: 99
 ---
-# Commercially available products
+# Some links
+## badUSB as reported by media
+- https://www.vrt.be/vrtnws/en/2013/10/30/did_russia_spy_onwesternleaders-1-1766568/
+- https://threatpost.com/fin7-mailing-malicious-usb-sticks-ransomware/177541/
+- https://unit42.paloaltonetworks.com/plugx-variants-in-usbs/
+
+
+## Commercially available products
 
 - [Hak5 (rubber ducky, OMG)](https://shop.hak5.org/products/usb-rubber-ducky)
 - [Flipper Zero[(https://flipperzero.one/)
