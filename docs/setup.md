@@ -7,7 +7,7 @@ nav_order: 3
 
 Go to File > Preferences > Additional Boards Manager URLs and copy paste the url below.
 
-![Preferences menu](images/preferences.png)
+![Preferences menu](../images/preferences.png)
 
 ```
 https://raw.githubusercontent.com/ArminJo/DigistumpArduino/master/package_digistump_index.json
@@ -15,6 +15,6 @@ https://raw.githubusercontent.com/ArminJo/DigistumpArduino/master/package_digist
 
 Go to Tools > Board > Boards Manager, ​search for Digispark and install “Digistump AVR Boards”​
 
-![Boards Manager menu](images/boardsmanager.png)
+![Boards Manager menu](../images/boardsmanager.png)
 
 And you’re done!​
