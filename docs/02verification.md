@@ -67,4 +67,6 @@ Arduino uses a Qwerty layout by default and we need to tell it explicitely if we
 
 ![Go to examples under file](../images/keyboardlayout1.png)
 
+Feel free to toy around with this built in example to test out Keyboard Layouts
+
 ![A list of the keyboard layouts available in the Digispark package](../images/keyboardlayout2.png)
