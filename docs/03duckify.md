@@ -10,4 +10,4 @@ Spacehuhn made [this wonderful online convertor](https://duckify.huhn.me) helpin
 
 ![Duckify your script](../images/duckify.png)
 
-Generate Arduino code using the online tool and upload this to your Arduino. Pay attention to the language settings on the bottom right corner.
+Generate Arduino code using the online tool and upload this to your Arduino. Pay attention to the language settings on the bottom left corner.
