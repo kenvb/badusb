@@ -1,5 +1,13 @@
 ---
 layout: default
-title: Pastebin
+title: Setup Pastebin
 nav_order: 5
 ---
+[Famous website](https://pastebin.com/) for “easy copy and paste”
+- It's Used in a lot of data exfiltration in companies.
+- Obviously, many opensource equivalents exist, so an actual hacker will host their own pastebin.
+
+For our workshop, we will just use a free version right now.
+
+So go to [pastebin](https://pastebin.com/) and create a free account. Consider using [mailnesia.com](https://mailnesia.com/) if you don’t want to use your own private account.
+
