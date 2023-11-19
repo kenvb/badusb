@@ -59,3 +59,12 @@ void loop() {
   // Nothing here
 }
 ```
+### Keyboard Layout
+
+Azerty users will probably notice that "Hello World" is typed as "Hello Zorld". By removing the double slashes in front of ```#define LAYOUT_FRENCH_BELGIAN```, you can tell it to use the Azerty layout.
+
+Arduino uses a Qwerty layout by default and we need to tell it explicitely if we want to use another one. Digispark has a Keyboard Layout Library with different layouts. If you want to find out which ones are available: you can look these up by loading in the keyboards sketch under "examples"
+
+![Go to examples under file](../images/keyboardlayout1.png)
+
+![A list of the keyboard layouts available in the Digispark package](../images/keyboardlayout2.png)
