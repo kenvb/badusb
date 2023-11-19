@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Links
+title: Setup the IDE
 nav_order: 3
 ---
 # Setup the IDE
