@@ -10,4 +10,4 @@ We will program our code from new-pastebin5.ps1 using the ducky script, which in
 3. Convert from duckyscript to arduino
 4. Upload it and observe your results
 
-> Warning: yes this will probably take some attempts to get it right.
+> Yes this will probably take some attempts to get it right.
