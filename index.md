@@ -24,9 +24,9 @@ Old, but excellent [talk from Black Hat](https://www.youtube.com/watch?v=nuruzFq
 - Privileged access escalation has to start somewhere
 - Defense in Depth strategy and generally avoiding the use of USB devices is recommended.
 
-# BadUSB lab
+# BadUSB workshop
 
-In this lab we shall be exfiltrating some data from local files to Pastebin using a Digispark - ATtiny85 USB, a very inexpensive device which will turn into a badUSB for educational purposes.
+In this workshop we shall be exfiltrating some data from local files to Pastebin using a Digispark - ATtiny85 USB, a very inexpensive device which will turn into a badUSB for educational purposes. Just follow the instructions on the following pages.
 
 ## Required components
 -  Digispark Attiny85
