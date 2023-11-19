@@ -9,5 +9,6 @@ nav_order: 99
 - [Flipper Zero[(https://flipperzero.one/)
 - [Malduino](https://maltronics.com/collections/malduinos)
 - [Usb ninja](https://usbninja.com/)
-- And many more….
+- And many more…
+
 Oh yea and sometimes the [regular](https://www.amazon.com/mouse-jiggler-usb/s?k=mouse+jiggler+usb) market just comes up with great (😜) ideas as well!
