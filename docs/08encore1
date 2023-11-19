@@ -1,0 +1,6 @@
+Remember that mouse jiggler idea?
+Go to “file” -> “examples” -> “Digisparkmouse” -> “mouse”
+There’s a lot of boiler plate code, but you only really need 1 movement command and 1 delay
+Exercise:
+To test this, put the “screen turn off” option to 1 minute in your windows power options.
+Without your “mouse jiggler”, your screen should turn off after 1 minute. With your mouse jiggler, it should remain accessible.
