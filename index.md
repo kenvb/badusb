@@ -11,8 +11,22 @@ nav_order: 1
 
 Old, but excellent [talk from Black Hat](https://www.youtube.com/watch?v=nuruzFqMgIw)
 
+## What are its limitations?
+
+- Logged in as the user -> limited to the user’s access rights
+- Keyboard layout
+- Can be easily detected by the observant user
+
+## That being said...
+
+- New exploits are being found every day
+- Privileged access escalation has to start somewhere
+- Defense in Depth strategy and generally avoiding the use of USB devices is recommended.
+
 # BadUSB lab
-Exfiltrating some data from local files to pastebin using a Digispark - ATtiny85 USB
+
+In this lab we shall be exfiltrating some data from local files to Pastebin using a Digispark - ATtiny85 USB, a very inexpensive device which will turn into a badUSB for educational purposes.
+
 ## Required components
 -  Digispark Attiny85
 -  The Arduino IDE: https://www.arduino.cc/en/software
