@@ -9,7 +9,9 @@ nav_order: 2
 - We need the [digistump drivers](https://github.com/digistump/DigistumpArduino/releases)
 - Download the zip, unpack it and run the “install drivers” exe
 
-## Setup the IDE
+## Install & setup the IDE
+
+Download and install the Arduino IDE.
 
 Go to File > Preferences > Additional Boards Manager URLs and copy paste the url below.
 
