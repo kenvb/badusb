@@ -3,7 +3,8 @@ layout: default
 title: Setup the IDE
 nav_order: 2
 ---
-# Setup the IDE
+# Get your Attiny85 ready
+## Setup the IDE
 
 Go to File > Preferences > Additional Boards Manager URLs and copy paste the url below.
 
@@ -18,3 +19,8 @@ Go to Tools > Board > Boards Manager, ​search for Digispark and install “Dig
 ![Boards Manager menu](../images/boardsmanager.png)
 
 And you’re done!​
+
+## Install the drivers
+
+- We need the [digistump drivers](https://github.com/digistump/DigistumpArduino/releases)
+- Download the zip, unpack it and run the “install drivers” exe
