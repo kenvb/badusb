@@ -29,6 +29,6 @@ Old, but excellent [talk from Black Hat](https://www.youtube.com/watch?v=nuruzFq
 In this workshop we shall be exfiltrating some data from local files on a Windows machine to Pastebin using a Digispark - ATtiny85 USB, a very inexpensive device which will turn into a badUSB for educational purposes. Just follow the instructions on the following pages.
 
 ## Required components
--  Digispark Attiny85
+-  Digispark Attiny85 (cost: 2.5 - 6 euro. Bulk makes it cheaper)
 -  The [Arduino IDE](https://www.arduino.cc/en/software)
 -  The [Digistump drivers](https://github.com/digistump/DigistumpArduino/releases/download/1.6.7/Digistump.Drivers.zip)
