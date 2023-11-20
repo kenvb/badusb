@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Setup the IDE
+title: Installation of software
 nav_order: 2
 ---
 # Get your Attiny85 ready
