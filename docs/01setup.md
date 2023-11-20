@@ -11,7 +11,7 @@ nav_order: 2
 
 ## Install & setup the IDE
 
-Download and install the Arduino IDE.
+Download and install the [Arduino IDE](https://www.arduino.cc/en/software).
 
 Go to File > Preferences > Additional Boards Manager URLs and copy paste the url below.
 
