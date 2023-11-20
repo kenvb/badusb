@@ -20,3 +20,7 @@ badUSB's being used out in the world.
 - And many more…
 
 Oh yea and sometimes the [regular](https://www.amazon.com/mouse-jiggler-usb/s?k=mouse+jiggler+usb) market just comes up with great (😜) ideas as well!
+
+## Special shoutout to Spacehuhn
+
+For making the wonderfull duckify website and [general contributions](https://spacehuhn.com) to all things hacking.
