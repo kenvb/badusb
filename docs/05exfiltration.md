@@ -46,9 +46,9 @@ This means we will use 2 keys​:
 
 Create a new file called `get-apiuserkey.ps1`, using the code below.
 ```
-$DevKey     = PUT-DEV-KEY-HERE
-$Username   = PUT-PASTEBIN-USERNAME-HERE
-$Password   = PUT-PASTEBIN-PASSWORD-HERE
+$DevKey     = "PUT-DEV-KEY-HERE"
+$Username   = "PUT-PASTEBIN-USERNAME-HERE"
+$Password   = "PUT-PASTEBIN-PASSWORD-HERE"
 $PasteBinLogin = "https://pastebin.com/api/api_login.php"
 $Body = @{ 
     api_dev_key = $DevKey;
