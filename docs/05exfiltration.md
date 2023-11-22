@@ -7,6 +7,10 @@ nav_order: 6
 
 Go to the folder where you previously created logindata.ps1 and create a new file called `new-pastebin.ps1` with the code below. Open your terminal and run new-pastebin.ps1 (don't doubleclick in windows, run it via the Powershell terminal)
 
+You might have to launch powershell as administrator first to change the set-executionpolicy to "unrestricted"
+
+`set-executionpolicy unrestricted`
+
 1. Observe the results. You will see an URL
 2. Visit this URL
 
