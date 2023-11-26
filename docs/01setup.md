@@ -6,12 +6,12 @@ nav_order: 2
 # Get your Attiny85 ready
 ## Install the drivers
 
-- We need the [digistump drivers](https://github.com/digistump/DigistumpArduino/releases)
+- We need the [digistump drivers](https://github.com/digistump/DigistumpArduino/releases){:target="_blank"}
 - Download the zip, unpack it and run the “install drivers” exe
 
 ## Install & setup the IDE
 
-Download and install the [Arduino IDE](https://www.arduino.cc/en/software).
+Download and install the [Arduino IDE](https://www.arduino.cc/en/software){:target="_blank"}.
 
 Go to File > Preferences > Additional Boards Manager URLs and copy paste the url below.
 
