@@ -12,7 +12,7 @@ This sketch makes the led on your Arduino blink.
 
 Copy paste the code below and upload it to your Attiny85. 
 
-```arduino
+```c++
 // Original code: https://codebender.cc/sketch:8285#Digispark%20Blink.ino
 void setup()
 {
@@ -48,7 +48,7 @@ Replugging the Attiny85 after uploading the code shouldn't be needed, but for so
 This sketch will just start typing out "Hello world" wherever your cursor is, if it's in a location where it can type of course (notepad, search bar of your browser, ...)
 
 Copy paste the code below
-```arduino
+```c++
 //#define LAYOUT_FRENCH_BELGIAN
 #include <DigiKeyboard.h>
 void setup() {
