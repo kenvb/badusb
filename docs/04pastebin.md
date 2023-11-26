@@ -22,7 +22,7 @@ Find your developer API Key, Never share this with anyone!
 
 Create a new file named logindata.ps1 file with the code below  and copy paste your dev key into that file.
 
-```Powershell
+```powershell
 $DevKey     =   "PUT-DEVKEY-HERE"
 $UserKey    =   "PUT-USER-KEY-HERE"
 ```
