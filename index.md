@@ -36,3 +36,9 @@ In this workshop we shall be exfiltrating some data from local files on a Window
 -  The [Arduino IDE](https://www.arduino.cc/en/software){:target="_blank"}
 -  The [Digistump drivers](https://github.com/digistump/DigistumpArduino/releases/download/1.6.7/Digistump.Drivers.zip){:target="_blank"}
 -  A Windows 10/11 client or Virtual Machine where you have (local) admin rights
+
+## Target audience
+This workshop is aimed at everyone who wants to learn more about security or who wants to use this in some sort of security awareness workshop. Ideally the target audience:
+- Has some scripting / coding experience (powershell, bash, python).
+- Isn't afraid of the terminal (basic usage like dir, cd and knows how to elevate to admin).
+- Knows how to use a virtual machine in virtualbox or vmware, ... (if your computer is locked down by admins).
