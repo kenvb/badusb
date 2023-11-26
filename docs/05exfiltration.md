@@ -39,7 +39,7 @@ You might encounter an error related to the "internet explorer engine", if that'
 
 This should fix your issue.
 
-## Preparing more advanced use of Pastebin
+## Preparing a more advanced use of Pastebin
 Thus far, our data exiltration is public.​ Thanks to the API key we can upload to Pastebin but we need to use authentication to make it private, so let’s make it private​ 😃.
 
 For this we need to setup our “userkey”​
