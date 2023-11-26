@@ -23,4 +23,4 @@ Oh yea and sometimes the [regular](https://www.amazon.com/mouse-jiggler-usb/s?k=
 
 ## Special shoutout to Spacehuhn
 
-For making the wonderfull duckify website and [general contributions](https://spacehuhn.com){:target="_blank"} to all things hacking.
+For making the wonderful duckify website and [general contributions](https://spacehuhn.com){:target="_blank"} to all things hacking.
