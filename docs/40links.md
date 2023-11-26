@@ -13,14 +13,14 @@ badUSB's being used out in the world.
 
 ## Commercially available products
 
-- [Hak5 (rubber ducky, OMG)](https://shop.hak5.org/products/usb-rubber-ducky)
-- [Flipper Zero[(https://flipperzero.one/)
-- [Malduino](https://maltronics.com/collections/malduinos)
-- [Usb ninja](https://usbninja.com/)
+- [Hak5 (rubber ducky, OMG)](https://shop.hak5.org/products/usb-rubber-ducky){:target="_blank"}
+- [Flipper Zero[(https://flipperzero.one/){:target="_blank"}
+- [Malduino](https://maltronics.com/collections/malduinos){:target="_blank"}
+- [Usb ninja](https://usbninja.com/){:target="_blank"}
 - And many more…
 
-Oh yea and sometimes the [regular](https://www.amazon.com/mouse-jiggler-usb/s?k=mouse+jiggler+usb) market just comes up with great (😜) ideas as well!
+Oh yea and sometimes the [regular](https://www.amazon.com/mouse-jiggler-usb/s?k=mouse+jiggler+usb){:target="_blank"} market just comes up with great (😜) ideas as well!
 
 ## Special shoutout to Spacehuhn
 
-For making the wonderfull duckify website and [general contributions](https://spacehuhn.com) to all things hacking.
+For making the wonderfull duckify website and [general contributions](https://spacehuhn.com){:target="_blank"}to all things hacking.
