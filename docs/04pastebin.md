@@ -6,7 +6,7 @@ nav_order: 5
 # Pastebin
 [Famous website](https://pastebin.com/){:target="_blank"} for “easy copy and paste”
 - It's used by a lot of malicious hackers in a lot of [data exfiltration situations](https://attack.mitre.org/techniques/T1567/003/){:target="_blank"} in companies.
-- Obviously, many opensource equivalents exist, so an actual hacker will host their own pastebin.
+- Obviously, many opensource equivalents exist, so an actual hacker can host their own version of Pastebin.
 
 For our workshop, we will just use a free version right now.
 
