@@ -11,7 +11,6 @@ To verify everything is setup correctly and that our little Attiny85 Arduino is 
 This sketch makes the led on your Arduino blink.
 
 Copy paste the code below and upload it to your Attiny85. 
-![Code being copy pasted in the IDE](../images/uploadcode.png)
 
 ```arduino
 // Original code: https://codebender.cc/sketch:8285#Digispark%20Blink.ino
@@ -37,6 +36,7 @@ void loop()
 	delay(1000);
 }
 ```
+![Code being copy pasted in the IDE](../images/uploadcode.png)
 Keep in mind that you have to replug your Attiny85 whenever you upload new code. You can do this as soon as you see the text below appear.
 ![Plug in the device information message](../images/pluginthedevice.png)
 
@@ -46,9 +46,6 @@ Replugging the Attiny85 after uploading the code shouldn't be needed, but for so
 This sketch will just start typing out "Hello world" wherever your cursor is, if it's in a location where it can type of course (notepad, search bar of your browser, ...)
 
 Copy paste the code below
-
-![Code being copy pasted in the IDE](../images/codehelloworld.png)
-
 ```arduino
 //#define LAYOUT_FRENCH_BELGIAN
 #include <DigiKeyboard.h>
@@ -61,6 +58,7 @@ void loop() {
   // Nothing here
 }
 ```
+![Code being copy pasted in the IDE](../images/codehelloworld.png)
 ### Keyboard Layout
 
 Azerty users will probably notice that "Hello World" is typed as "Hello Zorld". By removing the double slashes in front of ```#define LAYOUT_FRENCH_BELGIAN```, you can tell it to use the Azerty layout.
