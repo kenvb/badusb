@@ -10,6 +10,12 @@ nav_order: 8
 - [USB dust caps](https://www.amazon.com/Usb-Port-Caps/s?k=Usb+Port+Caps){:target="_blank"} or [protector caps](https://www.amazon.com/Blocker-Non-Removable-Protector-Moisture-Information/dp/B0B9MY9KZC?th=1){:target="_blank"} also do the trick, but only when your devices are unattended for very short periods.
 - Threathening people with violence when they insert foreign usb devices in your computer is an option but generally frowned upon by HR (yes this is a joke, don’t use violence!)
 
+## but let's assume that one day someone IS able to plug-in a badUSB in your computer..
+
+- Don't keep passwords in txt-files on your pc. Use one of the many password managers out there! (bitwarden, keepass, lastpass, protonpass, ...)
+- Only use your admin account for those times you actually need it.
+- Multi-factor authentication is absolutely helpful as malicious actors need more than just your password!
+
 # How can we detect badUSB abuse?
 
 - USB forensics is… [special](https://www.youtube.com/watch?v=b4KyGhh75Qc){:target="_blank"} and so we shouldn't always trust its data.
