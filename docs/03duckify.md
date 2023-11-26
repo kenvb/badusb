@@ -35,3 +35,7 @@ If something doesn't go well: try increasing the "DELAY" numbers from 100 to 100
 - It doesn't get feedback from your computer when something goes wrong.
 
 Don't be afraid to further tweak the DELAY numbers if needed to make it run optimally.
+
+What did our code do ?
+
+Hint: Maybe the [Microsoft documentation can](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.4){:target="_blank"} tell us 😉
