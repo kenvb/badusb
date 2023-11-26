@@ -5,7 +5,7 @@ nav_order: 7
 ---
 # Final badUSB preparation
 
-So for those of you who wondered what the difference was between the 2 scripts on the last page: we are preparing our code to have it transfered to our badUSB. If we want to make everything work, we will need to add our logindata as well, because without it, Pastebin won't accept our information. You might want to think about the consequences of this while doing the next steps!
+For those of you who wondered what the difference was between the 2 scripts on the last page: we are preparing our code to have it transfered to our badUSB. If we want to make everything work, we will need to add our logindata as well, because without it, Pastebin won't accept our information. You might want to think about the consequences of this while doing the next steps!
 
  ![Attiny85](../images/badusb.png "Image of a badUSB")
 
