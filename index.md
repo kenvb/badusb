@@ -29,7 +29,7 @@ Old, but excellent [talk from Black Hat](https://www.youtube.com/watch?v=nuruzFq
 
 In this workshop we shall be exfiltrating some data from local files on a Windows machine to [Pastebin](https://pastebin.com/){:target="_blank"} using a Digispark - ATtiny85 USB, a very inexpensive device which we will turn into a badUSB for educational purposes. Just follow the instructions on the following pages.
 
- ![Attiny85](badusb/images/attiny85.png "Image of an Attiny85")
+ ![Attiny85](/images/attiny85.png "Image of an Attiny85")
 
 ## Required components
 -  Digispark Attiny85 (cost: 2.5 - 6 euro. Bulk makes it cheaper)
