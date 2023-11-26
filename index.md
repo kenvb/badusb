@@ -4,6 +4,7 @@ layout: home
 nav_order: 1
 ---
 # BadUSB
+Visit the Github pages version [here](https://kenvb.github.io/badusb/)
 ## What is a badUSB?
 
 - A USB device posing as a HID (Human Interface Device)
