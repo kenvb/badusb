@@ -27,12 +27,12 @@ Go to Tools > Board > Boards Manager, ​search for Digispark and install “Dig
 
 Lastly, we will have to select the board that we're going to use in this workshop.
 
-![Preferences menu](../images/selectboard.png)
+![Top menu](../images/selectboard.png)
 
-![Preferences menu](../images/selectboard3.png)
+![Board selection menu](../images/selechtboard3.png)
 
 So be sure to have the "digispark" selected whenever you create new "sketches" (this is how Arduino calls the little programs you make).
 
-![Preferences menu](../images/selectboard2.png)
+![Overview](../images/selectboard2.png)
 
 And you’re done!​
