@@ -39,6 +39,6 @@ In this workshop we shall be exfiltrating some data from local files on a Window
 
 ## Target audience
 This workshop is aimed at everyone who wants to learn more about security or who wants to use this in some sort of security awareness workshop. Ideally the target audience:
-- Has some scripting / coding experience (powershell or bash or python or ...).
+- Has some **basic** scripting / coding experience (powershell or bash or python or ...).
 - Isn't afraid of the terminal (basic usage like dir, cd and knows how to elevate to admin).
 - Knows how to use a virtual machine in virtualbox or vmware, ... (if your computer is locked down by admins).
