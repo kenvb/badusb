@@ -29,6 +29,8 @@ Lastly, we will have to select the board that we're going to use in this worksho
 
 ![Top menu](../images/selectboard.png)
 
+Using the filter, you should be able to find the digispark board easily. 
+
 ![Board selection menu](../images/selechtboard3.png)
 
 So be sure to have the "digispark" selected whenever you create new "sketches" (this is how Arduino calls the little programs you make).
