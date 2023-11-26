@@ -30,5 +30,5 @@ In this workshop we shall be exfiltrating some data from local files on a Window
 
 ## Required components
 -  Digispark Attiny85 (cost: 2.5 - 6 euro. Bulk makes it cheaper)
--  The [Arduino IDE](https://www.arduino.cc/en/software)
--  The [Digistump drivers](https://github.com/digistump/DigistumpArduino/releases/download/1.6.7/Digistump.Drivers.zip)
+-  The [Arduino IDE](https://www.arduino.cc/en/software){:target="_blank"}
+-  The [Digistump drivers](https://github.com/digistump/DigistumpArduino/releases/download/1.6.7/Digistump.Drivers.zip){:target="_blank"}
