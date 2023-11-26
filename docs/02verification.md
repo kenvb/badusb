@@ -37,7 +37,9 @@ void loop()
 }
 ```
 ![Code being copy pasted in the IDE](../images/uploadcode.png)
+
 Keep in mind that you have to replug your Attiny85 whenever you upload new code. You can do this as soon as you see the text below appear.
+
 ![Plug in the device information message](../images/pluginthedevice.png)
 
 Replugging the Attiny85 after uploading the code shouldn't be needed, but for some of the next exercises it's advisable if you don't see the expected results. As this devices emulates a keyboard, if the user of the computer is doing other things at the same time, it might jumble up the keystrokes your computer registers. Don't be afraid to wait a couple of seconds!
@@ -58,7 +60,9 @@ void loop() {
   // Nothing here
 }
 ```
+
 ![Code being copy pasted in the IDE](../images/codehelloworld.png)
+
 ### Keyboard Layout
 
 Azerty users will probably notice that "Hello World" is typed as "Hello Zorld". By removing the double slashes in front of ```#define LAYOUT_FRENCH_BELGIAN```, you can tell it to use the Azerty layout.
