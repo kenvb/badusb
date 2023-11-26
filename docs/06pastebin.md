@@ -15,6 +15,6 @@ We will program our code from new-pastebin5.ps1 using the ducky script, which in
 > Yes this will probably take some attempts to get it right.
 
 ## Some tips
-- If your commands fail: maybe your strings are too big. Make them smaller or create bigger delays
+- If your commands fail: maybe your strings are too big. Make them smaller or create bigger delays.
 - A semi-colon is a way to execute multiple commands on one line, but perhaps you'll have to split commands up again.
-- Check the Duckify docs to make your code cleaner, there's an easier way to create delays 😉
+- Check the Duckify docs to make your code cleaner, there's an easier way to create delays.
