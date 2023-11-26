@@ -10,7 +10,7 @@ nav_order: 1
 - Pretends – mostly – to be a keyboard.
 - Executes malicious code on unsuspecting users’ computer
 
-Old, but excellent [talk from Black Hat](https://www.youtube.com/watch?v=nuruzFqMgIw)
+Old, but excellent [talk from Black Hat](https://www.youtube.com/watch?v=nuruzFqMgIw){:target="_blank"}
 
 ## What are its limitations?
 
