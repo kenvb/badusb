@@ -13,7 +13,7 @@ nav_order: 8
 
 - Don't keep passwords in txt-files on your pc. Use one of the many password managers out there! (bitwarden, keepass, lastpass, protonpass, ...)
 - Only use your admin account for those times you actually need it.
-- Multi-factor authentication is absolutely helpful as malicious actors need more than just your password!
+- Multi-factor authentication is absolutely helpful as malicious actors need more than just your password to do naughty stuff on your account!
 
 # How can we detect badUSB abuse?
 
