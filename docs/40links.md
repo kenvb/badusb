@@ -14,7 +14,7 @@ badUSB's being used out in the world.
 ## Commercially available products
 
 - [Hak5 (rubber ducky, OMG)](https://shop.hak5.org/products/usb-rubber-ducky){:target="_blank"}
-- [Flipper Zero[(https://flipperzero.one/){:target="_blank"}
+- [Flipper Zero](https://flipperzero.one/){:target="_blank"}
 - [Malduino](https://maltronics.com/collections/malduinos){:target="_blank"}
 - [Usb ninja](https://usbninja.com/){:target="_blank"}
 - And many more…
