@@ -30,7 +30,7 @@ ENTER
 ```
 If everything goes well, code should be executed in a powershell terminal.
 
-If something doesn't go well: try increasing the "DELAY" numbers from 100 to 1000, just to be safe. The Attiny85 doesn't understand what it is you're trying to do. The communication between it and your computer are purely one-directional.
+If something doesn't go well: try increasing the "DELAY" numbers from 100 to 1000, just to be safe. The Attiny85 doesn't understand what it is you're trying to do. The communication between it and your computer is purely one-directional.
 - It just executes keystrokes.
 - It doesn't get feedback from your computer when something goes wrong.
 
