@@ -33,7 +33,7 @@ Using the filter, you should be able to find the digispark board easily.
 
 ![Board selection menu](../images/selechtboard3.png)
 
-So be sure to have the "digispark" selected whenever you create new "sketches" (this is how Arduino calls the little programs you make).
+Be sure to have the "digispark" selected whenever you create new "sketches" (this is how Arduino calls the little programs you make).
 
 ![Overview](../images/selectboard2.png)
 
