@@ -36,7 +36,7 @@ Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing 
 
 You might encounter an error related to the "internet explorer engine", if that's the case: launch internet explorer and click through the initial setup.
 
-![Internet Explorer first setup](/images/IE11.png)
+![Internet Explorer first setup](../images/IE11.png)
 
 This should fix your issue.
 
