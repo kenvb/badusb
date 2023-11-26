@@ -13,7 +13,7 @@ This sketch makes the led on your Arduino blink.
 Copy paste the code below and upload it to your Attiny85. 
 ![Code being copy pasted in the IDE](../images/uploadcode.png)
 
-```
+```arduino
 // Original code: https://codebender.cc/sketch:8285#Digispark%20Blink.ino
 void setup()
 {
@@ -47,7 +47,7 @@ Copy paste the code below
 
 ![Code being copy pasted in the IDE](../images/codehelloworld.png)
 
-```
+```arduino
 //#define LAYOUT_FRENCH_BELGIAN
 #include <DigiKeyboard.h>
 void setup() {
