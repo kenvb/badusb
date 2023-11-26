@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Links
+title: Changelog
 nav_order: 50
 ---
 # Changelog
