@@ -16,7 +16,7 @@ Old, but excellent [talk from Black Hat](https://www.youtube.com/watch?v=nuruzFq
 
 - Logged in as the user -> limited to the user’s access rights
 - Keyboard layout
-- Can be easily detected by the observant user
+- Can easily be detected by the observant user
 
 ## That being said...
 
