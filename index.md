@@ -5,6 +5,7 @@ nav_order: 1
 ---
 # BadUSB
 Visit the Github pages version [here](https://kenvb.github.io/badusb/) (in case you're looking at the actual github code)
+If you do want to look at the code behind, check out the [github repository](https://github.com/kenvb/badusb){:target="_blank"}
 ## What is a badUSB?
 
 - A USB device posing as a HID (Human Interface Device)
