@@ -74,3 +74,9 @@ Arduino uses a Qwerty layout by default and we need to tell it explicitely if we
 Feel free to toy around with this built in example to test out Keyboard Layouts
 
 ![A list of the keyboard layouts available in the Digispark package](../images/keyboardlayout2.png)
+
+# Known issues
+Issues might happen due to Windows not correctly recognizing the Attiny85-board, this prevents new code from being uploaded to the device. Extensive troubleshooting hasn't happened as to the exact cause but if your computer is using usb 3.X ports, it might help to have a usb-hub in between, especially if that one offers usb 2.X connectivity. This might be related to the way the Attiny85 is getting emulated on these ports.
+
+Using the AVR Board manager 1.7.0 in stead of the 1.7.5 also solved the issue in 1 case. 
+
