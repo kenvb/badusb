@@ -10,7 +10,6 @@ badUSB's being used out in the world.
 - [Threatpost.com article](https://threatpost.com/fin7-mailing-malicious-usb-sticks-ransomware/177541/)
 - [Palo Alto Networks blogpost](https://unit42.paloaltonetworks.com/plugx-variants-in-usbs/)
 
-
 ## Commercially available products
 
 - [Hak5 (rubber ducky, OMG)](https://shop.hak5.org/products/usb-rubber-ducky){:target="_blank"}
