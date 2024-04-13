@@ -8,5 +8,5 @@ nav_order: 50
 |Date   | Change   |Author  |
 |---|---|---|
 |26-nov-23   |First full Github version of the badUSB lab   |Ken Vanden Branden   |
-|   |   |   |
+| 13-apr-24  |Update verification & links pages   |Ken Vanden Branden   |
 |   |   |   |
