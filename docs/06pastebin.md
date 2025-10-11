@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Final badUSB preparation
-nav_order: 7
+nav_order: 20
 ---
 # Final badUSB preparation
 
@@ -21,3 +21,5 @@ We will program our code from new-pastebin5.ps1 using the ducky script, which in
 - If your commands fail: maybe your strings are too big. Make them smaller or create bigger delays.
 - A semi-colon is a way to execute multiple commands on one line, but perhaps you'll have to split commands up again.
 - Check the Duckify docs to make your code cleaner, there's an easier way to create delays.
+
+

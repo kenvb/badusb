@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Encore!
-nav_order: 10
+nav_order: 35
 ---
 # Encore: Mouse jiggler
 Remember that mouse jiggler idea?

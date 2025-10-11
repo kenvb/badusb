@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Links
-nav_order: 40
+nav_order: 100
 ---
 # Some links
 ## badUSB as reported by media

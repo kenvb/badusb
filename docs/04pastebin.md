@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Setup Pastebin
-nav_order: 5
+nav_order: 10
 ---
 # Pastebin
 [Famous website](https://pastebin.com/){:target="_blank"} for “easy copy and paste”

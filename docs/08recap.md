@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Recap
-nav_order: 9
+nav_order: 30
 ---
 # BadUSB workshop recap
 
