@@ -9,4 +9,4 @@ nav_order: 99
 |---|---|---|
 |26-nov-23   |First full Github version of the badUSB lab   |Ken Vanden Branden   |
 | 13-apr-24  |Update verification & links pages   |Ken Vanden Branden   |
-|   |   |   |
+|  11-oct-25 | Add github as alternative to run this workshop   | Ken Vanden Branden   |
