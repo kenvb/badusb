@@ -28,7 +28,9 @@ Old, but excellent [talk from Black Hat](https://www.youtube.com/watch?v=nuruzFq
 
 # BadUSB workshop
 
-In this workshop we shall be exfiltrating some data from local files on a Windows machine to [Pastebin](https://pastebin.com/){:target="_blank"} using a Digispark - ATtiny85 USB, a very inexpensive device which we will turn into a badUSB for educational purposes. Just follow the instructions on the following pages.
+In this workshop we shall be exfiltrating some data from local files on a Windows machine to [Pastebin](https://pastebin.com/){:target="_blank"} or [github](https://github.com/){:target="_blank"}using a Digispark - ATtiny85 USB, a very inexpensive device which we will turn into a badUSB for educational purposes. Just follow the instructions on the following pages.
+
+Remark: I added Github as an alternative because Pastebin, sadly, has some rate limiting going on when several students are poking the API. Limitations of the free version I guess.
 
  ![Attiny85](../badusb/images/attiny85.png "Image of an Attiny85")
 
