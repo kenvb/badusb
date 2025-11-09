@@ -36,16 +36,23 @@ void loop()
 	delay(1000);
 }
 ```
+
 ![Code being copy pasted in the IDE](../images/uploadcode.png)
 
-Keep in mind that you have to replug your Attiny85 whenever you upload new code. You can do this as soon as you see the text below appear.
+Alternatively, you can also just load the Blink-program via the examples.
+
+![Blink program](../images/blink.png)
+
+:warning: Keep in mind that you have to replug your Attiny85 whenever you upload new code. You can do this as soon as you see the text below appear.
 
 ![Plug in the device information message](../images/pluginthedevice.png)
 
 Replugging the Attiny85 after uploading the code shouldn't be needed, but for some of the next exercises it's advisable if you don't see the expected results. As this device emulates a keyboard, if the user of the computer is doing other things at the same time, it might jumble up the keystrokes your computer registers. Don't be afraid to wait a couple of seconds!
 
 ## Hello World
-This sketch will just start typing out "Hello world" wherever your cursor is, if it's in a location where it can type of course (notepad, search bar of your browser, ...)
+This sketch will just start typing out "Hello world" wherever your cursor is, if it's in a location where it can type of course (notepad, search bar of your browser, ...).
+
+This should already give you an idea on how 'intelligent' this little software is.
 
 Copy paste the code below
 ```c++
