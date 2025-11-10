@@ -1,7 +1,8 @@
 ---
 layout: default
+parent: Pastebin
 title: Data Exfiltration using Pastebin
-nav_order: 15
+nav_order: 10
 ---
 # Pastebin First demo
 
