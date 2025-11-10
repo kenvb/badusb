@@ -1,7 +1,8 @@
 ---
 layout: default
+parent: github
 title: Data Exfiltration using Github
-nav_order: 16
+nav_order: 10
 ---
 # Github First demo
 

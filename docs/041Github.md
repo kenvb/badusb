@@ -1,7 +1,8 @@
 ---
 layout: default
+parent: github
 title: Setup Github
-nav_order: 11
+nav_order: 1
 ---
 # Github gists
 When multiple people are uploading code snippets to Pastebin from the same network (and same public IP address), we observed some sort of rate-limiting. After a few uploads we are unable to create new pastebins. That's why an alternative is presented here, using Github gists.
