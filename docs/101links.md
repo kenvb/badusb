@@ -28,6 +28,7 @@ On a regular basis, the topic of ['juice-jacking'](https://en.wikipedia.org/wiki
 
 And while these theoretical attacks could happen, you'd always have to ask yourself this: who would take the risk of burning advanced malware code on a public space with high changes of getting caught with little possible gains?
 So, in specific enterprise environments, it makes sense to be very aware of BadUSB abuse. But how prevalent is this problem in random public settings?
+
 ## Special shoutout to Spacehuhn
 
 For making the wonderful duckify website and [general contributions](https://spacehuhn.com){:target="_blank"} to all things hacking.
