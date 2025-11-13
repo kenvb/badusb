@@ -1,6 +1,6 @@
 ---
 layout: default
-title: github
+title: Github
 nav_order: 6
 ---
 
