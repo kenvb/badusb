@@ -3,6 +3,8 @@ description: A simple workshop on how to build a badUSB with an Arduino
 theme: just-the-docs
 logo: "/images/badusb.png"
 url: https://just-the-docs.github.io
+plugins:
+  - jemoji
 
 #aux_links:
 #  Template Repository: https://github.com/just-the-docs/just-the-docs-template

