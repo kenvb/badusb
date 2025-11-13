@@ -20,15 +20,6 @@ badUSB's being used out in the world.
 
 Oh yea and sometimes the [regular](https://www.amazon.com/mouse-jiggler-usb/s?k=mouse+jiggler+usb){:target="_blank"} market just comes up with great (😜) ideas as well!
 
-## FUD (Fear Uncertainty & Doubt)
-On a regular basis, the topic of ['juice-jacking'](https://en.wikipedia.org/wiki/Juice_jacking) comes up.
-- [From the FBI](https://www.cbsnews.com/news/fbi-warns-against-juice-jacking-what-is-it/)
--[Local ISP's](https://www.proximus.be/nl/id_b_cr_juice_jacking/particulieren/blog/news/bits-and-bytes/juice-jacking.html)
-- [Belgian Police](https://www.politie.be/5998/nl/nieuws/het-opladen-van-je-toestellen-is-niet-zonder-risico)
-
-And while these theoretical attacks could happen, you'd always have to ask yourself this: who would take the risk of burning advanced malware code on a public space with high changes of getting caught with little possible gains?
-So, in specific enterprise environments, it makes sense to be very aware of BadUSB abuse. But how prevalent is this problem in random public settings?
-
 ## Special shoutout to Spacehuhn
 
 For making the wonderful duckify website and [general contributions](https://spacehuhn.com){:target="_blank"} to all things hacking.
