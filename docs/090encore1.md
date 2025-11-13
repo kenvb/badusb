@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Encore!
+title: Getting jiggler with it
 nav_order: 35
 ---
-# Encore: Mouse jiggler
+# Mouse jiggler
 Remember that mouse jiggler idea?
 
 Go to “file” -> “examples” -> “Digisparkmouse” -> “mouse”
