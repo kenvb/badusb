@@ -4,7 +4,7 @@ title: Getting jiggler with it
 nav_order: 35
 ---
 # Mouse jiggler
-Remember that mouse jiggler idea?
+Remember that :mouse: mouse jiggler idea?
 
 Go to “file” -> “examples” -> “Digisparkmouse” -> “mouse”
 
@@ -14,4 +14,4 @@ Exercise:
 
 To test this, put the “screen turn off” option to 1 minute in your windows power options. Without your “mouse jiggler”, your screen should turn off after 1 minute. With your mouse jiggler, it should remain accessible.
 
-> This is not something you should use in a corporate environment to prevent yourself from logging off or to circumvent security policies. Usage of this will be frowned upon!
+> This is not something you should use in a corporate environment to prevent yourself from logging off or to circumvent security policies. Usage of this will be frowned :suspect: upon!

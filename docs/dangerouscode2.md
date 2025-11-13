@@ -22,4 +22,4 @@ A little tip: should you find a piece of Powershell-code online, how about copy 
 
 Some words of caution:
 
-Please don't blindly do this with an internal script, written by a colleague. Especially if you have no idea what it does. You might inadvertently leak precious information.
+:warning: Please don't do this blindly with an internal script. Especially if you have no idea what it does. You might inadvertently leak precious information.
