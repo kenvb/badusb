@@ -3,6 +3,7 @@ layout: default
 title: Dangerous(2)
 nav_order: 55
 ---
+# Dangerous code(2)
 In our labs, we sent data to pastebin. But what if we used pastebin (or github) to host our malicious code?!
 Duckify this powershell command:
 Here's another sneaky piece of code.
