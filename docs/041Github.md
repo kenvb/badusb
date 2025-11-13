@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: github
+parent: Github
 title: Setup Github
 nav_order: 1
 ---
